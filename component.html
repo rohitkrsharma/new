@@ -1,0 +1,57 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="demo2">word of the pride</p>
+    <p id="demo1"> WORLD WIDE</p>
+    <p id="demo"></p>
+    <button onclick= "document.getElementById('demo').innerHTML=Date()">date </button>
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+    <button onclick="displayDate()">date</button>
+    <button onmouseover="displayDate()">The time is?</button>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+    //let car = "fiat";
+    //document.getElementById("demo").innerHTML = car;
+    // const car = { type:"fiat", model:"500",color:"white" };
+
+    // document.getElementById("demo").innerHTML = car.color;
+    //  let text= "asdfghjklmnopqrstuvwxyz";
+    
+    //     document.getElementById("demo").innerHTML =text.length;
+
+    // let str = "Apple, Banana, Kiwi";
+    // document.getElementById("demo").innerHTML = str.slice(7,13); 
+
+
+//     function myFunction() {
+//   let text = document.getElementById("demo1").innerHTML;
+//   document.getElementById("demo1").innerHTML=text.toLowerCase();
+  
+// }
+// function myFunction() { 
+//     const test = document.getElementById("demo2").innerHTML;
+//     document.getElementById("demo2").innerHTML= test.toUpperCase();
+//  }
+// let test = "5";
+// document.getElementById("demo").innerHTML = test.padStart(4,"x");
+
+function myFunction() {
+    let str = "hi there is a company which is awesome";
+    document.getElementById("demo").innerHTML = str.indexOf("which");
+}
+    </script>
+</body>
+</html>
+

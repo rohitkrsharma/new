@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+        justify-content: space-around;
+      }
+      h2{
+        text-align: center;
+      }
+      .btn{
+        margin-top: 66px;
+        
+      }
+      .btn:hover {
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        color:black;
+        cursor: pointer;
+      }
+      .rem{
+        border-radius: 5px;
+      }
+
+
+    </style>
+</head>
+<body>
+    <script>
+         function pxTorem(){
+            var a = document.getElementById('input').value;
+            var b = a/16;
+            document.getElementById('input2').value = b;
+            
+         }
+           function remTopx(){
+            var r = document.getElementById('input3').value;
+            var t = r*16;
+           document.getElementById('input4').value = t;
+                      } 
+            
+
+    </script>
+   
+    <div class="main">
+        <div>
+       <h2 class="px">px</h2> 
+       <input type="number" id="input">
+    </div>
+    <div>
+        
+        <button class="btn" onclick="pxTorem()">Convert</button>
+    </div>
+    <div>
+        <h2>rem</h2>
+        <input type="number" id="input2">
+    </div>
+</div>
+
+<div class="main">
+    <div>
+   <h2 class="px">rem</h2> 
+   <input type="number" id="input3">
+</div>
+<div>
+    
+    <button class="btn" onclick="remTopx()">Convert</button>
+</div>
+<div>
+    <h2>px</h2>
+    <input type="number" id="input4">
+</div>
+</div>
+</body>
+</html>

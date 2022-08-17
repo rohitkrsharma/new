@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #413e3e;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;padding-top: 10px;
+    }
+    .dropbtn {
+  background-color: #303030;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #413e3e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: rgb(250, 246, 246);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {background-color: #6f6d6d}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #060806;
+}
+.mail{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18px;
+}
+.mid{
+    height: 80vh;
+}
+.f-content {
+    text-align: center;
+    
+}
+
+</style>
+<body>
+    <div>
+        <div class="nav">
+            <h2>Rohit Sharma</h2>
+            <div class="dropdown">
+                <button class="dropbtn">My Work</button>
+                <div class="dropdown-content">
+                <a href="http://127.0.0.1:5500/pixel.html">pixel to rem</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+              </div>
+        </div>
+        <div class="mid"></div>
+        <footer>
+            <div class="footer">
+                <div class="f-content">
+                    <a class="mail" href="https://mail.google.com/mail/u/1/#inbox">rsharm8986@gmail.com</a>
+                
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

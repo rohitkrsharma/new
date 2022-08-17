@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Array</title>
+    <style>
+        #demo1{
+            color: rgb(52, 43, 226);
+            font-size: 25px;
+           font-family: Inter;
+           font-weight: 700;
+           opacity: 80%;
+           
+           
+            /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+        }
+
+    </style>
+</head>
+<body>
+
+        <p class="intro">Hello World!</p>
+        <p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+        <!-- <div id="main">
+                <p>Finding HTML Elements by Tag Name</p>
+                <p>This example demonstrates the
+            <b>getElementsByTagName</b> method.</p>
+            </div> -->
+
+    <!-- <button onclick="myFunction1()">Sort Alphabetically</button> -->
+    <!-- <button onclick="myFunction2()">Sort Numerically</button> -->
+    
+    <!-- <p id="demo1"> Finding Html Element By Id</p>
+    <p>An array is a special variable which can store more than one value</p>
+    <p>special variable which can store more than one value</p> -->
+
+    <!-- <button onclick="myFunction()"> try it</button> -->
+    <p id="demo"></p>
+    <script>
+        // const cars = ["Saab", "Volvo", "BMW"];
+        // document.getElementById("demo").innerHTML = cars;
+        // const cars = new Array("figo","tata","ninja");
+        // cars[0] = "opel";
+        // document.getElementById("demo").innerHTML = cars;
+        // const persons = ["john","deo",45];
+        // document.getElementById("demo").innerHTML = persons[2];
+        // const person = {firstName:"John", lastName:"Doe", age:46};
+        // document.getElementById("demo").innerHTML = person.age;
+       // 
+        
+    //     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    //     let len = fruits.length;
+    //     let text = "<ul>";
+    //         for (let i = 0; i < len; i++){
+    //             text += "<li>" + fruits[i] + "</li>";
+    //         }
+    //         text += "</ul>";
+    //    document.getElementById("demo").innerHTML = text;
+              
+            //    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            //    let text = "<ul>"; 
+            //     fruits.forEach(myFunction);
+            //     text += "</ul>";
+            //   document.getElementById("demo").innerHTML = text;
+            //      function myFunction(value){
+            //         text += "<li>" + value + "</li>";
+            //      }
+
+            // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            // document.getElementById("demo").innerHTML = fruits;
+
+            // function myFunction(){
+            //     fruits.push("guava");
+            //     document.getElementById("demo").innerHTML = fruits;
+            // }
+
+            // const fruits = ["banana","oranage","Apple","Mango"];
+            // document.getElementById("demo").innerHTML = fruits;
+               
+            
+            //     fruits.shift();
+            //     document.getElementById("demo").innerHTML = fruits;
+
+            //    const points = [30,40,50,60,80,100,200,]
+            //    document.getElementById("demo").innerHTML = points[1];
+
+            // let points = new Array(30,40);
+
+            // const fruits = ["banana","oranage","Apple","Mango"];
+            // document.getElementById("demo").innerHTML = fruits;
+
+
+            // const fruits = ["banana","oranage","Apple","Mango"];
+            // document.getElementById("demo").innerHTML = fruits;
+            // fruits.unshift("lemon");
+            // document.getElementById("demo").innerHTML = fruits;
+
+
+        //     const fruits = ["banana","guava","oranage","Apple","Mango"];
+        //     document.getElementById("demo").innerHTML = fruits;
+        //     fruits[0] = "kiwi";
+        //    document.getElementById("demo").innerHTML = fruits;
+
+        // const girls = ["girl1","girl2","girl3","girl4","girl5","girl6"];
+        // const boys = ["boy1","boy2","boy3","boy4","boy5"];
+        // const fruits = ["apple","apple","apple","apple","apple","apple","apple"];
+        // const fruit = ["apple","apple","apple","apple","apple"];
+        // const both = girls.concat(boys,fruits,fruit);
+        // console.log(both);
+
+
+        // const fruits = ["apple","banana","orange","guava"];
+        //  fruits.sort();
+        //  fruits.reverse();
+        // document.getElementById("demo").innerHTML = fruits;
+
+
+ 
+
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.getElementById("demo").innerHTML = points;  
+
+// function myFunction1() {
+//   points.sort();
+//   document.getElementById("demo").innerHTML = points;
+// }
+// function myFunction2() {
+//   points.sort(function(a, b){return a - b});
+//   document.getElementById("demo").innerHTML = points;
+// }
+
+//   const points = [40, 100, 1, 5, 25, 10];
+//   document.getElementById("demo").innerHTML = myArrayMax(points); 
+// //   console.log(points);
+//   function myArrayMax(arr) {
+//      let len = arr.length;
+//      let max = -Infinity;
+//      while(len--) {
+//         if (arr[len] > max){
+//             max = arr[len];
+//         }
+//   }
+//   return max;
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// let txt = "";
+// numbers.forEach(myFunction);
+// document.getElementById("demo").innerHTML = txt;
+
+// function myFunction(value, index, array) {
+//   txt += value + "<br>"; 
+// // console.log(value);
+// }
+
+// 
+
+// const number1 = [45,4,9,16,25];
+// const number2 = number1.map(myFunction);
+// document.getElementById("demo").innerHTML = number2;
+// function myFunction( value,index, array){
+//     return value*2 + "<br>";
+    
+// }
+
+// const age = [24,25,12,14,54];
+// const over18 = age.filter(myFunction);
+// document.getElementById("demo").innerHTML = over18;
+
+// function myFunction(value, index, array) {
+//     return value > 18;
+// }
+
+
+// const number = [24,25,12,14,54];
+// let sum = number.reduce(myFunction);
+// document.getElementById("demo").innerHTML = sum;
+//  function myFunction( total, value, index, array) {
+//     return   total +value;
+//   }
+
+// const number = [2,5,15,19,14];    
+// let allover18 = number.some(myFunction);
+// document.getElementById("demo").innerHTML = allover18;
+// function myFunction( value,index,array) {
+//     return value >18;
+// }
+
+//    const fruits = ["Apple","Orange","Apple","Mango"];
+//    let position = fruits.indexOf("Mango")+1;
+// //    console.log(position);
+// document.getElementById("demo").innerHTML = position;
+// 
+
+
+// function mouseOver() {
+//   document.getElementById("demo").text = "red";
+// }
+
+// function mouseOut() {
+//   document.getElementById("demo").style.color = "black";
+// }
+
+// const numbers = [45,4,9,16,25];
+// let txt = "";
+// numbers.forEach(myfunction);
+// document.getElementById("demo").innerHTML = txt;
+// function myfunction(value,index,array){
+//  txt += value +"<br>";
+// }
+
+// const numbers1 = [45, 4, 9, 16, 25];
+// const numbers2 = numbers1.map(myFunction);
+// document.getElementById("demo").innerHTML = numbers2;
+// // console.log(numbers2);
+// function    myFunction(value,index,array){
+//   return  value * 2;
+// }
+// myFunction(value);
+
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction);
+
+// document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+// function myFunction(total, value, index, array) {
+//   return total + value;
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction, 100);
+
+// document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+// function myFunction(total, value,index  , array) {
+//   return total + value;
+// }
+
+
+// 
+
+// const numbers = [4, 9, 16, 25, 29];
+
+// document.getElementById("demo").innerHTML = "First number over 18 has index " + numbers.findIndex(myFunction);
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+
+// 
+
+// document.getElementById("demo").innerHTML = "Hello World!";
+
+// const element = document.getElementsByTagName("p");
+// document.getElementById("demo").innerHTML = "The element taken from the another paragraph" + element[0].innerHTML;
+
+
+// const x = document.getelementById("main");
+// const x = document.getElementById("main");
+// const y = x.getElementsByTagName("p");
+// const y = x.getElementsByTagName("p");
+
+// document.getElementById("demo").innerHTML =
+// 'The first paragraph (index 0) inside "main" is: ' 
+// + y[0].innerHTML;
+// document.getElementById("demo").innerHTML =
+// 'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+// const x = document.getElementById("main");
+// const y = x.getElementsByTagName("p");
+
+// document.getElementById("demo").innerHTML = 
+// 'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+
+
+// const x = document.getElementsByClassName("intro");
+// document.getElementById("demo").innerHTML = 
+// 'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+
+const x = document.querySelectorAll("p.intro");
+document.getElementById("demo").innerHTML = 'The first paragraph (index 0) with class= "intro" is: ' + x[1].innerHTML;
+
+</script>
+
+
+</body>
+</html>

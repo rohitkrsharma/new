@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv1, #mydiv2 {
+           background-color: coral;
+           padding: 50px;
+        }
+         #myp1, #myp2{
+           background-color: white;
+           padding: 20px;
+           font-size: 20px;
+           border: 1px solid;
+         }
+    </style>
+</head>
+<body>
+    <!-- <p><button onclick="myMove()">Click Me</button></p> 
+
+    <div id ="container">
+      <div id ="animate"></div>
+    </div>
+    
+    <script>
+
+    function myMove(){
+        let id = null;
+        const elem = document.getElementById("animate");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id);
+            }
+            else{
+               pos++;
+               elem.style.top = pos + "px";
+               elem.style.left = pos + "px";
+
+            }
+    }
+}
+    </script> -->
+    <!-- <h1 onclick="changeText(this)">Click on this text!</h1>
+
+    <script>
+    function changeText(id) {
+    id.innerHTML = "Ooops!";
+    }
+    </script> -->
+
+    <!-- <p id="demo"></p>
+    <button  onclick="displayDate()">time?</button>
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script> -->
+           
+
+    <!-- <button id="btn"> try it</button>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("btn").onclick = displayDate;
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script> -->
+
+       <!-- Enter Your Name:<input type="text" id="fname" onchange="upperCase()">
+           <script>
+            function upperCase() {
+                const x = document.getElementById("fname");
+                x.value = x.value.toUpperCase();
+            }
+           </script> -->
+
+
+           <!-- <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: red; width:150px; height:40px; padding:40px"> click me </div>
+               <script>
+                   function mDown(obj){
+                    obj.style.backgroundColor = "red";
+                    obj.innerHTML= "release me";
+                   }
+                   function mUp(obj){
+                    obj.style.backgroundColor = "orange";
+                    obj.innerHTML= "Thank You"
+                   }
+               </script> -->
+
+               <!-- <button id="myBtn" > click me </button>
+               <p id ="demo"></p>
+               <script>
+                document.getElementById("myBtn").addEventListener("click",displayDate);
+                function displayDate(){
+                    document.getElementById("demo").innerHTML = Date();
+                }
+               </script> -->
+
+               <!-- <button id ="mybtn">try it</button>
+               <script>
+                document.getElementById("mybtn").addEventListener("click",function(){
+                    alert("Hello World!");
+                });
+
+               </script> -->
+
+               <!-- <button id ="mbtn">try it</button>
+               <script>
+                var x = document.getElementById("mbtn");
+                x.addEventListener("click",myfunction);
+                x.addEventListener("click",otherFunction);
+                function myfunction(){
+                    alert("Hello World!");
+                }
+                function otherFunction(){
+                    alert("Hello");
+                }
+               </script> -->
+
+
+                <!-- <button id ="mbtn">try it</button>
+                <p id="demo"></p>
+                <script>
+                    var x = document.getElementById("mbtn");
+                    x.addEventListener("mouseover",myfunction);
+                    x.addEventListener("click", myfunction1);
+                    x.addEventListener("mouseout",otherFunction);
+
+                    function myfunction(){
+                        document.getElementById("demo").innerHTML += "mouseover! <br>";
+                    }
+                    function myfunction1(){
+                        document.getElementById("demo").innerHTML += "click! <br>";
+                    }
+                    function otherFunction(){
+                        document.getElementById("demo").innerHTML += "mouseout <br>";
+                    }
+
+                </script> -->
+
+                 <!-- <button id="btn">click</button>
+                <p id="demo"></p>
+                <script>
+                    let p1 = 5;
+                    let p2 = 7;
+                    document.getElementById("btn").addEventListener("click", function(){
+                        myfunction(p1, p2);
+                    });
+                    function myfunction(a, b){
+                        document.getElementById("demo").innerHTML = a*b;
+                        
+                        
+
+                    }
+                </script> -->
+
+
+
+                <!-- <div id="mydiv1">
+                    <h2>Bubbling:</h2>
+                    <p id="myp1"> Click Me1</p>
+                </div><br>
+                <div id="mydiv2">
+                    <h2>Capturing</h2>
+                    <p id="myp2"> Click Me2</p>
+                </div>
+                <script>
+                    document.getElementById("myp1").addEventListener("click", function(){
+                        alert("you clicked the white element!");
+                    });
+                    document.getElementById("mydiv1").addEventListener("click", function(){
+                        alert("you clicked the coral element!");
+                    });
+                    document.getElementById("myp2").addEventListener("click", function(){
+                        alert("you clicked the white element!");
+                    });
+                    document.getElementById("mydiv2").addEventListener("click", function(){
+                        alert("you clicked the coral element!");
+                    });
+                </script> -->
+                
+                <!-- <h1 id="id01">My First Page</h1>
+                <p id="id02">Hello World!</p>
+
+                <script>
+                // document.getElementById("id02").innerHTML = document.getElementById("id01").firstChild.nodeValue;
+                // document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[1].nodeValue;
+                
+                </script>  -->
+
+                <!-- <h1 id="id01">My First Page</h1>
+                <p id="id02"></p>
+                <script>
+                document.getElementById("id02").innerHTML = document.getElementById("id01").nodeName;
+                </script> -->
+
+                <h2>JavaScript HTML DOM</h2>
+                <h3>Remove an HTML Element.</h3>
+
+                <div>
+                <p id="p1">This is a paragraph.</p>
+                <p id="p2">This is another paragraph.</p>
+                </div>
+
+                <button onclick="myFunction()">Remove Element</button>
+
+                <script>
+                function myFunction() {
+                document.getElementById("p1").remove();
+                }
+                
+                </script>
+
+
+                
+
+
+</body>
+</html>

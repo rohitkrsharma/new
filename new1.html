@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            width: 300px;
+            position: relative;
+        }
+
+        #select {
+            width: 400px;
+            height: 40px;
+            position: absolute;
+        }
+       
+        .item {
+            background-color: aquamarine;
+            width: fit-content;
+            margin: 5px 5px;
+            height: 30px;
+            padding: 0px 5px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .item span {
+            text-align: center;
+
+        }
+
+        .containerCenter {
+            position: absolute;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            /* width: 100px;
+            background-color: white; */
+            height: 40px;
+        }
+
+        .allvalue {
+            display: flex;
+
+        }
+    </style>
+
+</head>
+<script>
+    const items = ['dheeraj', 'rohit', 'suresh'];
+</script>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <select onchange="myfun()" name="" id="select">
+                <option value=""> Select country</option>
+            </select>
+            <div class="containerCenter">
+                <div class="allvalue">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const itemSet = document.getElementById('select');
+        var arrayforunique = []
+        var uniq = []
+        items.forEach((ele) => {
+            itemSet.innerHTML += `<option value=${ele}>${ele}</option>`;
+        })
+
+        function myfun() {
+            arrayforunique.push(itemSet.value);
+            uniq = [...new Set(arrayforunique)];
+            document.querySelector('.allvalue').innerHTML = ""
+            uniq.forEach((ele, i) => {
+                document.querySelector('.allvalue').innerHTML += `<div class="item">${ele} <button onclick="clear1(${i})">❌</button></div>`
+
+            })
+        }
+
+        function clear1(i) {
+            const allitem = document.querySelectorAll('.item');
+            console.log(allitem)
+            allitem.forEach((ele, ind) => {
+                ele.addEventListener('click',() => {
+                    if(ind == i){
+                        ele.style.display = "none"
+                    }
+                })
+            })
+
+            var filtes = arrayforunique.filter( (ele) => {
+                return ele != arrayforunique[i]
+            })
+            arrayforunique = []
+            filtes.forEach((ele, i) => {
+                arrayforunique[i] = ele;
+            })
+            console.log(arrayforunique.length)
+            if (arrayforunique.length === 0) {
+                // continue to remove the first option until no options remain.
+                document.querySelector('#select').value = ""
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
